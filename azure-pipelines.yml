@@ -10,14 +10,8 @@ pool:
   vmImage: windows-latest
 strategy:
   matrix:
-    Python36:
-      python.version: '3.6'
     Python37:
       python.version: '3.7'
-    Python38:
-      python.version: '3.8'
-    Python39:
-      python.version: '3.9'
 
 steps:
 - task: UsePythonVersion@0
@@ -31,5 +25,5 @@ steps:
 - script: python -c "print('+++++++++++++++++++++++++++')" 
   displayName: 'Test'
 
-# - script: tox -e py
-#   displayName: 'Run Tox'
+- script: tox -e py
+  displayName: 'Run Tox'
