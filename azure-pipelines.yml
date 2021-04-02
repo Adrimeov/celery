@@ -28,5 +28,8 @@ steps:
 - script: pip install tox
   displayName: 'Install Tox'
 
+- script: python -c "print('+++++++++++++++++++++++++++')" 
+  displayName: 'Test'
+
 - script: tox -e py
   displayName: 'Run Tox'
