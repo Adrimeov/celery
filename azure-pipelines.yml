@@ -31,5 +31,5 @@ steps:
 - script: python -c "print('+++++++++++++++++++++++++++')" 
   displayName: 'Test'
 
-- script: tox -e py
-  displayName: 'Run Tox'
+# - script: tox -e py
+#   displayName: 'Run Tox'
