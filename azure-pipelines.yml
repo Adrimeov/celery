@@ -25,5 +25,5 @@ steps:
 - script: python -c "print('+++++++++++++++++++++++++++')" 
   displayName: 'Test'
 
-- script: tox -e py
+- script: tox -e py37
   displayName: 'Run Tox'
